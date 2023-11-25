@@ -28,4 +28,45 @@ var->Variable can be redeclared & and updated. A global scope variable.
 
 */
 
+/*
+Datatypes
+use typeOf(variable) to know type of varible
+Primitive :
+Number
+String
+Boolean
+Undefined
+Null
+BigInt  (valuen) n is the last of bigInt
+Symbol
 
+
+Non-primitive
+objects-> Arrays and funtions
+ojects are collection of values
+objects store Key:Value pair
+obj.key
+obj["key"]
+
+*/
+
+const student = {//key:value
+    fullName : "tarun Goyal",
+    age : 20,
+    cgpa : 9.3,
+    isPass : true
+};
+console.log(student.age)
+console.log(student["fullName"])
+student.age= student.age+1;
+console.log(student.age)
+
+const product={
+    productName : "Parker pen",
+    sellingPrice: 270,
+    mrp: 285,
+    discount: 5,
+    rating: 5,
+    isDeal: true
+};
+console.log(product);
