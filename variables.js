@@ -58,7 +58,7 @@ const student = {//key:value
     cgpa : 9.3,
     isPass : true
 };
-console.log(student.age)
+console.log("age of student is",student.age)
 console.log(student["fullName"])
 student.age= student.age+1;
 console.log(student.age)
