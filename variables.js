@@ -45,6 +45,8 @@ Non-primitive
 objects-> Arrays and funtions
 ojects are collection of values
 objects store Key:Value pair
+
+for accessing specific key
 obj.key
 obj["key"]
 
