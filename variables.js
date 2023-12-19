@@ -71,4 +71,4 @@ const product={
     rating: 5,
     isDeal: true
 };
-console.log(product);
+console.log(product.mrp);
