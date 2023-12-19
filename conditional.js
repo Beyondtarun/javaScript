@@ -23,9 +23,8 @@ TERNARY OPERATOR  CONDITION ? TRUE OUTPUT : FALSE OUTPUT
 console.log(5 > 13 ? "true" : "false"); //teranary operator
 
 let c = prompt("enter a number");
-if(c%5==0){
-    alert("multiple of 5")
-}else{
-    alert("no")
+if (c % 5 == 0) {
+  alert("multiple of 5");
+} else {
+  alert("no");
 }
-
