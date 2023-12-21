@@ -31,10 +31,18 @@ for(let i in student){
 
 let num =  20;
 let gameNum = prompt("Enter number");
-while(gameNum){
-    if(num==gameNum)
-    alert("you win");
-else
-   alert("you loose");
-gameNum=prompt("Enter number again:")
+while(num!= gameNum){
+
+gameNum=prompt("You loose enter number again:")
 }
+alert("you win")
+
+/*
+STRINGS
+let str="tarun"
+propertes:----
+str.length //5
+str[1]//a
+
+
+*/
