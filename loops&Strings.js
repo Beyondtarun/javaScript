@@ -15,27 +15,26 @@ do{
    return all keys of objects.
    object[var]
 */
-let str ="tarun";
-for(let i of str){
-    console.log(i);
+let str = "tarun";
+for (let i of str) {
+  console.log(i);
 }
 
-let student={
-    name:"taurn",
-    age:20,
-    class: 10,
+let student = {
+  name: "taurn",
+  age: 20,
+  class: 10,
 };
-for(let i in student){
-    console.log(i,student[i]);
+for (let i in student) {
+  console.log(i, student[i]);
 }
 
-let num =  20;
+let num = 20;
 let gameNum = prompt("Enter number");
-while(num!= gameNum){
-
-gameNum=prompt("You loose enter number again:")
+while (num != gameNum) {
+  gameNum = prompt("You loose enter number again:");
 }
-alert("you win")
+alert("you win");
 
 /*
 STRINGS
@@ -44,5 +43,21 @@ propertes:----
 str.length //5
 str[1]//a
 
+methods:------
+str.toUpperCase() //return new value doesn't change original string
+str.toLowerCase()
+str.trim()
+str.slice(start,end)//last index in exclusive: str.slice(0,3)//tar
+str1.concat(str2)
+str.replace(search,new)
+str.charAt(index)
+
+Escape Characters:
+\n:-next line
+\t:-tab space
+
+
+Template literals
+`string with ${variables}`; //String interpolation
 
 */
