@@ -15,26 +15,26 @@ do{
    return all keys of objects.
    object[var]
 */
-let str = "tarun";
-for (let i of str) {
-  console.log(i);
-}
+// let str = "tarun";
+// for (let i of str) {
+//   console.log(i);
+// }
 
-let student = {
-  name: "taurn",
-  age: 20,
-  class: 10,
-};
-for (let i in student) {
-  console.log(i, student[i]);
-}
+// let student = {
+//   name: "taurn",
+//   age: 20,
+//   class: 10,
+// };
+// for (let i in student) {
+//   console.log(i, student[i]);
+// }
 
-let num = 20;
-let gameNum = prompt("Enter number");
-while (num != gameNum) {
-  gameNum = prompt("You loose enter number again:");
-}
-alert("you win");
+// let num = 20;
+// let gameNum = prompt("Enter number");
+// while (num != gameNum) {
+//   gameNum = prompt("You loose enter number again:");
+// }
+// alert("you win");
 
 /*
 STRINGS
@@ -49,7 +49,7 @@ str.toLowerCase()
 str.trim()
 str.slice(start,end)//last index in exclusive: str.slice(0,3)//tar
 str1.concat(str2)
-str.replace(search,new)
+str.replace(search,new)//only replace the first occurence str.replaceAll()
 str.charAt(index)
 
 Escape Characters:
@@ -61,3 +61,7 @@ Template literals
 `string with ${variables}`; //String interpolation
 
 */
+
+let username="tarun";
+username="@".concat(username)+username.length;
+console.log(username);
