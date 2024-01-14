@@ -1,7 +1,6 @@
 /*
 collection of similar items(we can add diffrent items)
 Array is also a object
-*/
 
 let a = [10,20,30];
 
@@ -29,3 +28,28 @@ for(let i of a){
 for(let i in a){
     console.log("for in loop",a[i])//console.log(i) return indices
 }
+
+
+*/
+/* AVERAGE MARKS 
+let marks =[23,34,67,89,90]
+let sum =0;
+// for(let i of marks)
+//  sum+=i;
+
+marks.forEach((i)=>sum+=i)
+
+console.log("Average Marks :",sum/marks.length)
+*/
+
+/*
+DISCOUNT
+let price = [100,300,450,600]
+let discout = 10;
+
+for(let i in price){
+    price[i]=price[i]-(price[i]*(discout/100))
+}
+price.forEach((i)=>console.log(i))
+*/
+
