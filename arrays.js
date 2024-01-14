@@ -31,6 +31,9 @@ for(let i in a){
 
 
 */
+
+
+
 /* AVERAGE MARKS 
 let marks =[23,34,67,89,90]
 let sum =0;
@@ -53,3 +56,24 @@ for(let i in price){
 price.forEach((i)=>console.log(i))
 */
 
+
+/*
+ARRAYS METHODS
+change orignal array
+Push():add to end //retrun updated length
+pop():delete from end return deleted item
+
+donot change orignal array
+toString()
+concat : return new array
+*/
+let a=[]
+console.log(a.length);
+console.log(a.push(10))
+console.log(a.push(10,20,20))
+console.log(a)
+console.log(a.pop())
+console.log(a.toString())
+let b =[1,5,7]
+let c =a.concat(b)
+console.log(c)
