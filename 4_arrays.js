@@ -62,10 +62,16 @@ ARRAYS METHODS
 change orignal array
 Push():add to end //retrun updated length
 pop():delete from end return deleted item
+unshit: add to start
+shift:delete from start and return value
+splice:(statt, deletecount, new) //return krage value //kisi bhi value ko delete kr sakte or replace bhi
+
 
 donot change orignal array
 toString()
 concat : return new array
+slice:(start, end)//ending index in non inclusive
+
 */
 let a=[]
 console.log(a.length);
@@ -75,5 +81,13 @@ console.log(a)
 console.log(a.pop())
 console.log(a.toString())
 let b =[1,5,7]
-let c =a.concat(b)
+let c =a.concat(b)//a.concat(arr1,arr2,arr3,.....,arrN)
+console.log(c)
+console.log(c.splice(2,2,101,102))
+console.log(c)
+console.log(c.slice(2,4))
+console.log(c)
+c.splice(1,1,30)//replace 1st by 30
+c.splice(3,1)//delete 3ed index
+c.splice(4,0,9)//add after 4th index
 console.log(c)
