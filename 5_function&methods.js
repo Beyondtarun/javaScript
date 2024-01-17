@@ -58,7 +58,7 @@ countVowel("AIEOUklacma;c;vkwv;");
 
 /**
  * forEach loop //it is a method beacuse it is used with object
- * 
+ * only used for arrays
  * arr.forEach(callBackFucntion)
  * a call back is a function passed as an argument to another function
  * forEach loop can take 3 parameters (value, index, array) names could be anything
