@@ -65,6 +65,7 @@ countVowel("AIEOUklacma;c;vkwv;");
  */
 let arr=[2,3,4,5,6]
 let fo =["delhi","mumbai","shahdara"]
+arr.forEach((val)=>console.log(val)) //forEach array ki har value ko uthayega or use internal val mai pass krega jisse wo funther arguments mai jayegi
 
 fo.forEach((val)=>{
   console.log(val.toUpperCase())
@@ -75,4 +76,22 @@ fo.forEach((val,index)=>{
 fo.forEach((val,index,arry)=>{
   console.log(val.toUpperCase(),index,arry)
 })
-arr.forEach((val)=>console.log(val)) //forEach array ki har value ko uthayega or use internal val mai pass krega jisse wo funther arguments mai jayegi
+display()
+display()
+display()
+display("Sqaure of a Number")
+let nums = [1,2,3,4,5,6,34,56,78,32,67,89.6]
+nums.forEach((val)=> display(`Square of ${val} is ${val**2}`))
+//passing function in for each loop
+
+const square =(num)=>{
+  console.log( num**2);
+}
+// function square(num){
+//   console.log( num**2);
+// }
+nums.forEach(square)
+/**
+ * HIGHER ORDER FUNCTIONS
+ * Those function which take another functions as parameter
+ */
