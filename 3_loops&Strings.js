@@ -14,6 +14,7 @@ do{
   //used for objects
    return all keys of objects.
    object[var]
+6. forEach loop
 */
 let str = "tarun";
 for (let i of str) {
