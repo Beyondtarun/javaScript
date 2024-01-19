@@ -106,33 +106,8 @@ console.log(c)
  * perform some operation & return the array to a single value. it returns that single value. 
  */
 
-//map
-display("map")
-nums.map((val)=>{
-  console.log(val)
+let muparr = [23,45,67,89]
+let f = muparr.reduce((val,cur)=>{
+  return cur<val?cur : val;
 })
-
-let newArr = nums.map((val)=> {return val**2})
-console.log(newArr)//map return a new array while forEach not
-console.log(nums)
- //Filter
- display("filter")
-let evenArray = nums.filter((val)=>{
-  return val%2===0 //filter nums array ki unn value ka array return krega jispe ye condition true hogi
-})
-// let filter = nums.map((val)=>{
-//   return val%2===0   //yha par map is condition ki true ua false ka new array bandega
-// })
-console.log(evenArray)
-let marks=[78,98,92,40,34,56]
-let distinction = marks.filter((val)=>{return val>90})
-console.log(distinction)
-
-//reduce
-display("reduce ")
-let reduceSum = nums.reduce((previousValue,currentValue)=>{return previousValue + currentValue})
-display(reduceSum)
-let prod = nums.reduce((prev,curr)=>{return prev*curr})
-display(prod)
-let max = nums.reduce((pre,cur)=>{return pre>cur ? pre :cur;})
-display(max)
+console.log(f)
