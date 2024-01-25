@@ -70,11 +70,34 @@
 // console.log(headingsall[2].innerText)
 // console.log(document.body.children)//return all the children
 
-let div = document.querySelector("div")
-console.dir(div)
-let it = div.innerText
-console.log(it) 
-let ih = div.innerHTML
-console.log(ih)
+// let div = document.querySelector("div")
+// console.dir(div)
+// let it = div.innerText
+// console.log(it) 
+// let ih = div.innerHTML
+// // div.innerHTML="<h1>Tarun</h1>"//setting value
+// console.log(ih)
+// let tc = div.textContent
+// console.log(tc)
+
+
+let h2 = document.querySelector("h2")
+h2.innerText+=" from Tarun Goyal";
+
+let div = document.querySelectorAll(".box")
+div[0].innerText="div1 tarun"
+div[1].innerText="div2 anand"
+div[2].innerText="div3 goyal"
+
+// for(i of div){
+//     i.innerText="tarun"
+// }
+// for(i in div){
+//     div[i].innerText=`div ${i}`
+// }
+
+// for(let i=0;i<div.length;i++){
+//     div[i].innerText=`tarun ${i}`
+// }
 
 
