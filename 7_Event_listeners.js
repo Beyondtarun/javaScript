@@ -1,0 +1,4 @@
+/**
+ * EVENTS IN JAVASCRIPT
+ * 
+ */
