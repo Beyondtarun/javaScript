@@ -58,7 +58,7 @@
 
 
 /**
- * Properties
+ * PROPERTIES
  * tagName: returns tag for element nodes
  * innerText: returns the text content of the element and all its children
  * innerHTML: returns the plain text or HTML contents in the element
@@ -84,10 +84,10 @@
 let h2 = document.querySelector("h2")
 h2.innerText+=" from Tarun Goyal";
 
-let div = document.querySelectorAll(".box")
-div[0].innerText="div1 tarun"
-div[1].innerText="div2 anand"
-div[2].innerText="div3 goyal"
+// let div = document.querySelectorAll(".box")
+// div[0].innerText="div1 tarun"
+// div[1].innerText="div2 anand"
+// div[2].innerText="div3 goyal"
 
 // for(i of div){
 //     i.innerText="tarun"
@@ -101,3 +101,78 @@ div[2].innerText="div3 goyal"
 // }
 
 
+
+/**
+ * ATTRIBUTES (id/class/src/ref: additionla information in tag)
+ * getAttribute(attr) //to get the attribute value
+ * setAttribute(attr,value) //to set the attribute value
+ * 
+ * STYLE
+ * node.style 
+ */
+
+let div = document.querySelectorAll("div")
+console.log(div)
+// let div = document.querySelector("div")
+// console.log(div)
+let clas = div[1].getAttribute("class")
+console.log(clas)
+// div.setAttribute("class","tarun")
+// let clas = div.getAttribute("class")
+// console.log(clas)
+
+let d =1;
+for(i of div){
+i.style.height="100px"
+i.style.width="100px"
+i.style.background="green"
+i.style.color="white"
+i.innerHTML=`<h1> div ${d} </h1>`
+d++;
+}
+div[1].style.visibility="hidden"
+
+/**
+ * INSERT ELEMENTS
+ * let el = document.createElement("div")
+ * node.append(el) //adds at the end of the node(inside)
+ * node.prepend(el) //adds at the start of the node(inside)
+ * node.befoer(el)// adds before the nodes outside
+ * node.after(el)// adds after the nodes outside
+ * //each element only one time
+ * DELETE ELEMENTS
+ * node.remove() //remove the node
+ * 
+ * appendChild()
+ * removeChild()
+ * 
+ * CLASSLIST
+ */
+// div[2].remove()
+
+let newbtn = document.createElement("button")
+newbtn.innerText="cllick me";
+div[2].append(newbtn);
+let ul = document.createElement("ul")
+ul.innerHTML="<li> Taurn </li>"
+ul.style.color="black"
+
+div[3].append(ul)
+
+let newHeading =  document.createElement("h1")
+newHeading.innerText="Hello"
+document.querySelector("body").prepend(newHeading)
+newHeading.remove()
+
+//practice
+
+let newbtn1 = document.createElement("button")
+newbtn1.innerText="Click Me!"
+newbtn1.style.backgroundColor="red"
+newbtn1.style.color="white"
+document.querySelector("body").prepend(newbtn1)
+
+let para = document.querySelector("p")
+//  para.setAttribute("class","new")//this will chnage the class name and remove the styling
+//so i use classList
+para.classList.add("new")

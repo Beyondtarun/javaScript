@@ -1,4 +1,4 @@
-h1{
+/* h1{
     color: blue;
     background-color: yellow;
 }
@@ -8,4 +8,7 @@ button{
 }
 body{
     background-color: pink;
+} */
+.paragraph{
+    color: red;
 }
