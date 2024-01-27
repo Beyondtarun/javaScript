@@ -45,5 +45,25 @@ button[0].onclick =(e)=>{
     console.log(e.target)
     console.log(e)
 }
+button[0].onclick =(e)=>{ //override the above one
+    console.log("hello world")
+}
 
 
+/**
+ * EVENT LISTENERS
+ * (same event pe multiple action perfrom ho sakte hai)
+ * node.addEventListener(event,callback)
+ * node.removeEventListner(event,callback)
+ * 
+ * callback ka refernce same hona chahiye
+ */
+
+button[0].addEventListener("click",()=>{
+    console.log("click one")
+})
+const handle2 = ()=>{
+    console.log("handler2")
+}
+button[0].addEventListener("click",handle2)
+button[0].removeEventListener("click",handle2)
