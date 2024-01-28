@@ -19,8 +19,9 @@ body[0].prepend(h1)
 //     }
 // }
 const chnageColor=()=>{
-mode= !mode;
+
 body[0].classList.toggle("dark",mode)
 body[0].classList.toggle("light",!mode)
+mode =!mode
 }
 btn.addEventListener("click",chnageColor)

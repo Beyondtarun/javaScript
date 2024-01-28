@@ -66,4 +66,4 @@ const handle2 = ()=>{
     console.log("handler2")
 }
 button[0].addEventListener("click",handle2)
-button[0].removeEventListener("click",handle2)
+// button[0].removeEventListener("click",handle2)
