@@ -8,7 +8,11 @@ body{
 }
 #heading{
     padding-top: 10px;
-    color: #D9CAB3 ;
+    color: #ffffff ;
+    font-size: 3rem;
+    font-style: italic;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
 }
 .container{
     height: 90vh;
@@ -36,12 +40,12 @@ body{
     font-size: 3rem;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
-#reset{
-    padding: 8px;
-    border-radius: 10px;
+.reset{
+    padding: 1rem;
+    border-radius: 1rem;
     background: #000;
     color: aqua;
     font-size: 1rem;
     margin-top: 10px;
-    border: none;
+    border: 1px solid white;
 }
