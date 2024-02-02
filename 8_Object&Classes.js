@@ -79,4 +79,3 @@ obj2.color="white"
 
 console.log(obj)
 console.log(obj2)
-
