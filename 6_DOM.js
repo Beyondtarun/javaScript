@@ -141,7 +141,7 @@ div[1].style.visibility="hidden"
  * node.after(el)// adds after the nodes outside
  * //each element only one time
  * DELETE ELEMENTS
- * node.remove() //remove the node
+ * element.remove() //remove the node
  * 
  * appendChild()
  * removeChild()
