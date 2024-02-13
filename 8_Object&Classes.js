@@ -14,7 +14,7 @@ const student = {
 }
 
 console.log(student)
-student.name = "goyal"
+student.name = "arun"
 student.printf();
 
 let arr = [2,3,4,5] // on printing arr protoype is available in inspect
@@ -49,21 +49,36 @@ console.log(newObj.name) // print name in new Object
  * //Constructors
  * //properties
  * } 
+ * constructor(){ //can be parameterised also
+ * //initilize the object 
+ * }
  * 
  * let obj = new class();
 */
 
 class car {
+
     constructor(){
-        this.name = undefined;
-this.color = undefined;
+        console.log("created");
     }
+    car(){
+        this.name = undefined;
+        this.color = undefined;
+        console.log("ha")
+    }
+    brandName = "om";
     start(){
-        console.log(this.name)
+        console.log(this.name);
+        console.log(this.brandName);
+
     }
 
     stop() {
         console.log(this.color)
+    }
+    setBrand(brand){
+        this.brandName = brand;
+        console.log(this.brandName);
     }
 
 }
@@ -71,7 +86,7 @@ this.color = undefined;
 let obj =  new car();
 obj.name="toyota";
 obj.color="Blue";
-
+//heer i made two objects
 
 let obj2 = new car();
 obj2.name="maruti"
@@ -79,3 +94,10 @@ obj2.color="white"
 
 console.log(obj)
 console.log(obj2)
+obj2.start();
+
+obj2.setBrand("Tarun");
+
+
+
+
