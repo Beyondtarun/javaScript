@@ -49,7 +49,7 @@ console.log(newObj.name) // print name in new Object
  * //Constructors
  * //properties
  * } 
- * constructor(){ //can be parameterised also
+ * constructor(){ //can be parameterised also  it is special function in JavaSCript
  * //initilize the object 
  * }
  * 
@@ -98,6 +98,121 @@ obj2.start();
 
 obj2.setBrand("Tarun");
 
+/**
+ * INHERITANCE
+ * 
+ * CLASS PARENT{
+ * }
+ * 
+ * CLASS CHILD EXTENDS PARENT{
+ * }
+ */
 
+class Parent{
+    hello(){
+        console.log("parent class");
+    }
+}
 
+class Child extends Parent{
+// hello(){
+//     console.log("Child")
+// }
+}
 
+let cobj = new Child();
+
+cobj.hello;
+
+class person{
+    eat(){
+        console.log("EAT");
+    }
+    sleep(){
+        console.log("sleep");
+    }
+    work(){
+        console.log("do nothing")
+    }
+}
+
+class engineer extends person{
+    constructor(branch){
+        super(); //calling construtor of parent class
+        this.branch = branch;
+    }
+    work(){
+        super.eat(); //call mehtod of parent class
+        console.log(this.branch);
+        console.log("problem solving"); //method overrriding
+    }
+}
+
+let eobj = new engineer("CSE");
+console.log(eobj);
+eobj.eat();
+eobj.sleep();
+eobj.work();
+
+/**
+ * SUPER
+ * 
+ * super(args) //calls parent's cnstructorit wll pass args to constructor
+ * super.parentMethod(args)
+ * 
+ * 
+ * agar child class mai koi constructor banaya hai to usme sabse pehle parent class ke constructor ko call krna padega super use krke
+ * 
+ */
+
+/**
+ * Practice Question 1: You are creating a website
+ * for your colllege.Create a class user with 2 properties
+ * name & email. It also has a method called viewData()
+ * that allows user to view website data.
+ * 
+ * Question 2: Create a new class called Admin which inherits form user.
+ * Add a new method called editData to Admin it to edit website data.
+ * 
+ */
+
+class user{
+    constructor(name, email){
+        this.name = name;
+        this.email = email;
+        
+    }
+
+    viewData(){
+        console.log(`My name is ${this.name} and my email is ${this.email}`);
+    }
+}
+class Admin extends user{
+    constructor(name,email){
+        super(name,email);
+        super.viewData();
+    }
+    editData(name){
+       console.log(`now name is ${name}`)
+
+    }
+}
+
+let userobj = new user("Tarun","teg.tarun@gmail.com");
+userobj.viewData();
+let user2 = new user("Goyal","tarunlalcao");
+user2.viewData();
+
+let adminuser = new Admin("tarun","kemo");
+adminuser.editData("hero");
+userobj.viewData();
+
+/**
+ * ERROR HANDLING
+ * 
+ * try{
+ * //normal code
+ * }catch (err){
+ * //err is error object
+ * }
+ */
