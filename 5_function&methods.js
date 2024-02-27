@@ -139,3 +139,5 @@ let prod = nums.reduce((prev,curr)=>{return prev*curr})
 display(prod)
 let max = nums.reduce((pre,cur)=>{return pre>cur ? pre :cur;})
 display(max)
+
+//Arrow function are shorter way to declare anonymos fuc=nction
